@@ -38,6 +38,7 @@ jobs:
       - name: Setup Terraform with specified version on the runner
         uses: hashicorp/setup-terraform@v3 # Atualizado para v3 (melhor compatibilidade)
         with:
+          terraform_version: "1.6.6"
           terraform_wrapper: false # Recomendado ao usar saídas personalizadas ou scripts complexos
 
       - name: Terraform init
